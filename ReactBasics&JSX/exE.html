@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 1.e</title>
+  </head>
+  <body>
+    <div class="js-container">h</div>
+
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+    
+      
+        const button = <button>Good job</button>;
+        const paragraph = <p>My name is Luca</p>;
+        const productCost = 10 + 8 * 2;
+        console.log(productCost);
+        
+
+        const div = (
+            <div>
+                <p>Cotton Socks</p>
+                <p>Price: $10</p>
+                <p>T-Shirt</p>
+                <p>Price: $8</p>
+                <p>You picked 1 pack of socks and 2 T-shirts</p>
+                <p>Product Cost:${productCost}</p>
+            </div>
+        );
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
